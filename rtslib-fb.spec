@@ -4,7 +4,7 @@
 #
 Name     : rtslib-fb
 Version  : 2.1.57
-Release  : 12
+Release  : 13
 URL      : https://pypi.python.org/packages/source/r/rtslib-fb/rtslib-fb-2.1.57.tar.gz
 Source0  : https://pypi.python.org/packages/source/r/rtslib-fb/rtslib-fb-2.1.57.tar.gz
 Summary  : API for Linux kernel SCSI target (aka LIO)
