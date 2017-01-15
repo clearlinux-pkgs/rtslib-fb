@@ -4,7 +4,7 @@
 #
 Name     : rtslib-fb
 Version  : 2.1.58
-Release  : 21
+Release  : 22
 URL      : https://pypi.python.org/packages/source/r/rtslib-fb/rtslib-fb-2.1.58.tar.gz
 Source0  : https://pypi.python.org/packages/source/r/rtslib-fb/rtslib-fb-2.1.58.tar.gz
 Summary  : API for Linux kernel SCSI target (aka LIO)
@@ -41,13 +41,16 @@ python components for the rtslib-fb package.
 %setup -q -n rtslib-fb-2.1.58
 
 %build
+export LANG=C
+export SOURCE_DATE_EPOCH=1484523307
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
+export SOURCE_DATE_EPOCH=1484523307
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot}
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files
 %defattr(-,root,root,-)
