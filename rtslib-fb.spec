@@ -4,7 +4,7 @@
 #
 Name     : rtslib-fb
 Version  : 2.1.63
-Release  : 24
+Release  : 25
 URL      : http://pypi.debian.net/rtslib-fb/rtslib-fb-2.1.63.tar.gz
 Source0  : http://pypi.debian.net/rtslib-fb/rtslib-fb-2.1.63.tar.gz
 Summary  : API for Linux kernel SCSI target (aka LIO)
