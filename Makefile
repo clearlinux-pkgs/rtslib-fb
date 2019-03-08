@@ -1,5 +1,5 @@
 PKG_NAME := rtslib-fb
-URL = https://files.pythonhosted.org/packages/15/33/879f9e2e97c1cfca0f0d67985769b6ee566ca37abf7c4333d99e9794a1cb/rtslib-fb-2.1.66.tar.gz
+URL = https://files.pythonhosted.org/packages/fc/1a/77a26207bdad13cc39b93d874b3a1b04e5a0b0332fb716e4d654537bacdb/rtslib-fb-2.1.69.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
