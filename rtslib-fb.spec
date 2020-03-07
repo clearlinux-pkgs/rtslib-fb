@@ -4,7 +4,7 @@
 #
 Name     : rtslib-fb
 Version  : 2.1.71
-Release  : 38
+Release  : 39
 URL      : https://files.pythonhosted.org/packages/9e/1b/c26bc038888b1e6042d35ec97599cef05181fb6a7a7ecdbb0c041c3f50ea/rtslib-fb-2.1.71.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9e/1b/c26bc038888b1e6042d35ec97599cef05181fb6a7a7ecdbb0c041c3f50ea/rtslib-fb-2.1.71.tar.gz
 Summary  : API for Linux kernel SCSI target (aka LIO)
@@ -48,7 +48,9 @@ python components for the rtslib-fb package.
 Summary: python3 components for the rtslib-fb package.
 Group: Default
 Requires: python3-core
-Provides: pypi(rtslib-fb)
+Provides: pypi(rtslib_fb)
+Requires: pypi(pyudev)
+Requires: pypi(six)
 
 %description python3
 python3 components for the rtslib-fb package.
@@ -63,8 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583221154
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583543100
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
